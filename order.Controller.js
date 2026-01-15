@@ -4,6 +4,6 @@ export class OrderController {
     }
   create(req, res) {
     const order=this.orderService.createOrder(req.body)
-    return res.json({ message: "order created" });
+    return res.json({ order });
   }
 }
